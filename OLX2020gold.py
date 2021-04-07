@@ -28,4 +28,9 @@ def solution(juice, capacity):
     #if mixing wasnt possible then checking possibility of mixing juice from mixing glass with juice from some other glass.
     if counter==1 and max_capacity2>=max_juice: return (2)
     
+    """
+    If you use input ([1, 6, 10, 100], [11, 6, 19, 108]) you get 2, 
+    but actually it should be 3 because you can pour glasses 0 and 1 into glass 2. What do you think? 
+    """
+    
     return(counter)
